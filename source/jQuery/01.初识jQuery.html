@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 使用原生DOM
+        window.onload = function () {
+            var btn1 = document.getElementById("btn1")
+            btn1.onclick = function () {
+                var username = document.getElementById("username").value
+                alert(username)
+            }
+        }
+    </script>
+    <!-- 使用jQuery实现 -->
+    <script src="./JS/jquery-3.6.0.js"></script>
+    <script>
+        // 绑定文档加载完成的监听
+        $(function () {
+            $("#btn2").click(function () {//给btn2绑定点击监听
+                var username = $("#username").val()
+                alert(username)
+            })
+        })
+    </script>
+</head>
+<body>
+    <!-- 
+        What？
+            http://jquery.com/
+            一个优秀的JS函数库
+            使用了jQuery的网站超过90%
+            中大型WEB项目开发首选
+            Write Less，Do More
+        Why？
+            HTML元素读取(选择器)
+            HTML元素操作
+            CSS操作
+            HTML事件处理
+            JS动画效果
+            链式调用
+            读写合一
+            浏览器兼容
+            易扩展插件
+            ajax封装
+            ......
+        How？
+            1.引入jQuery库
+            2.使用jQuery
+                jQuery核心函数：$/jQuery
+                jQuery核心对象：执行$()返回的对象
+            区别两种js库文件
+                开发版(测试版)
+                生产版(压缩版)
+            区别两种引入JS库的方式
+                服务器本地库
+
+                CDN远程库
+                    项目上线时，一般使用比较靠谱的CDN资源库
+                    减轻服务器负担
+     -->
+     <!-- 需求：点击"确定按钮，提示输入的值" -->
+     用户名：<input type="text" name="" id="username">
+     <button id="btn1">确定(原生版)</button>
+     <button id="btn2">确定(jQuery版)</button>
+</body>
+</html>

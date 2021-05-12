@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        
+        /* 
+            交集选择器
+                作用：选中同时复合多个条件的元素
+                语法：选择器A选择器B...
+                注意：交集选择器中如果有元素选择器，必须用元素选择器开头
+            并集选择器
+                作用：同时选择多个选择器对应的元素
+                语法：选择器A,选择器B
+        */
+        div.red{
+            font-size: 30px;
+        }
+        h1,span{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="red">我是div</div>
+
+    <p class="red">我是p元素</p>
+
+    <h1>标题</h1>
+    <span>哈哈哈</span>
+</body>
+</html>

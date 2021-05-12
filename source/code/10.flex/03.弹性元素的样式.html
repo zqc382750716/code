@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        ul{
+            width: 800px;
+            border: 10px red solid;
+            /* 将ul设置为弹性容器 */
+            display: flex;
+        }
+        li{
+            width: 100px;
+            height: 100px;
+            background-color: #bfa;
+            font-size: 50px;
+            text-align: center;
+            line-height: 100px;
+            /* flex-grow: 弹性的增长系数 */
+            /* flex-shrink: 弹性的缩减系数
+                缩减系数的计算方式比较复杂
+                缩减多少是根据缩减系数和元素大小来计算的
+            */
+            /* flex-basis: 元素基础长度
+                指定的是元素在主轴上的基础长度
+                    默认值是auto表示参考元素自身的高度或宽度
+            */
+            /* flex 可以设置弹性元素所有的三个样式
+                flex 增长 缩减 基础值：
+                    initial："felx:0 1 auto"
+                    auto:"flex:1 1 auto"
+                    none:"flex:0 0 auto"
+            */
+            /* order 决定弹性元素的排列顺序 */
+        }
+        li:nth-child(2){
+            background-color: pink;
+        }
+        li:nth-child(3){
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+     <ul>
+         <li>1</li>
+         <li>2</li>
+         <li>3</li>
+     </ul>
+</body>
+</html>

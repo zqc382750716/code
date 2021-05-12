@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // ES6引入rest参数，用于获取函数的实参，用来代替arguments
+        // ES5获取实参的方式
+        // function date() {
+        //     console.log(arguments);
+        // }
+        // date("a","b","c");
+        // rest 参数
+        function date(...args) {
+            console.log(args);
+        }
+        date("a","b","c");
+        // rest 参数必须要放到参数的最后
+    </script>
+</body>
+</html>

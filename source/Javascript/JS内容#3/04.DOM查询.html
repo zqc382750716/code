@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+            通过document对象调用
+                getElementById()通过id属性获取一个元素节点对象
+                getElementsByTagName()通过标签名获取一组元素节点对象
+                getElementsByName()通过name属性获取一组元素节点对象
+
+            获取元素节点的子节点
+                getElementsByTagName()方法：返回当前节点的指定标签名后代节点
+                childNodes属性：表示当前节点的所有子节点
+                firstChild属性：表示当前节点的第一个子节点
+                lastChild属性：表示当前节点的最后一个子节点
+            
+            获取父节点和兄弟节点
+                parentNode属性：表示当前节点的父节点
+                previousSibling属性：表示当前节点的前一个兄弟节点
+                nextSibling属性：表示当前节点的后一个兄弟节点
+
+            innerHTML用于获取元素内部的HTML代码
+                对于自结束标签，这个属性没有意义
+            如果需要获取元素节点的属性
+                直接使用 元素.属性名
+                注意：class属性不能采用这种方式
+                    读取class属性是需要采用 元素.className
+
+            定义一个函数，专门用来为指定元素绑定单击响应元素
+                参数：
+                    idstr 要绑定单击响应函数的对象的id属性值
+                    fun 事件的回调函数，当单击元素时，该函数将会被执行
+
+            在事件的响应函数中，响应函数是给谁绑定的，this就是谁
+        */
+       function myclick(idStr , fun) {
+           var btn = document.getElementById("idStr");
+           btn.onclick = fun;
+       };
+    </script>
+</body>
+</html>

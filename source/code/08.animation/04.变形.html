@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: #bfa;
+            margin: 0 auto;
+
+            /* 
+                变形就是通过CSS来改变元素的形状或位置
+                    变形不会影响到页面的布局
+                transform 用来设置元素的变形效果
+                    平移：
+                        translateX()沿着x轴方向平移
+                        translateY()沿着y轴方向平移
+                        translateZ()沿着z轴方向平移
+                            平移元素，百分比是相对于自身计算的
+            */
+            transform: translateX(100px);
+        }
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+</body>
+</html>

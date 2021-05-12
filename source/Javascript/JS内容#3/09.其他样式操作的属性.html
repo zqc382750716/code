@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box1{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+    </style>
+    <script>
+        window.onload = function() {
+            var box1 = document.getElementById("box1");
+            var btn01 = document.getElementById("btn01");
+
+            btn01.onclick = function() {
+                
+            };
+        };
+        /*
+            clientWidth
+            cilentHeight
+                这两个属性可以获取元素的可见宽度和高度
+                这些属性都是不带px的，返回的都是一个数字，可以直接进行计算
+                会获取元素宽度和高度，包括内容区和内边距
+                这些属性都是只读的，不能修改
+            offsetWidth
+            offsetHeight
+                获取元素整个的宽度和高度，包括内容区，内边距和边框
+            offsetParent
+                可以用来获取当前元素的定位父元素
+                会获取到离当前元素最近的开启了定位的祖先元素
+                如果所有祖先元素都没有开启定位，则返回body
+            offsetLeft
+                当前元素相对于其定位父元素的水平偏移量
+            offsetTop
+                当前元素相对于其定位父元素的垂直偏移量
+            scrollHeight
+            scrollWidth
+                可以获取元素整个滚动区域的宽度和高度
+            scrollLeft
+                可以获取水平滚动条滚动的距离
+            scrollTop
+                可以获取垂直滚动条滚动的距离
+
+            当满足scrollHeight - scrollTop = cilentHeight
+            说明垂直滚动条滚动到底
+            当满足scrollWidth - scrollLeft = cilentHWidth
+            说明水平滚动条滚动到底
+
+            如果为表单项添加disabled="disabled" 则表单项将变成不可用状态
+
+            onscroll
+            该事件会在元素的滚动条滚动时触发
+        */
+    </script>
+</head>
+<body>
+    <button id="btn01">点我一下</button>
+    <br><br>
+    <div id="box1"></div>
+</body>
+</html>

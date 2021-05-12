@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="div1" class="box">class为box1的div1</div>
+    <div id="div2" class="box">class为box1的div2</div>
+    <div id="div3">div3</div>
+    <span class="box">class为box的span</span>
+    <br>
+    <ul>
+        <li title="hello">BBBBB</li>
+        <li class="box">CCCCC</li>
+        <li title="hello">DDDDD</li>
+        <li title="two">BBBBB</li>
+        <li style="display: none;">我本来是隐藏的</li>
+    </ul>
+    <!-- 
+        在原有选择器匹配的元素中进一步过滤的选择器
+        基本
+        内容
+        可见性
+        属性
+     -->
+    <script src="./JS/jquery-3.6.0.js"></script>
+    <script>
+        // 选择第一个div
+        // $("div:first").css('background','red')
+        // 选择最后一个class为box的元素
+        // $(".box:last").css('background','red')
+        // 选择所有class属性不为box的div
+        // $("div:not(.box)").css('background','red') 没有class属性也可以
+        // 选择第二个和第三个li元素
+        // $("li:gt(0):lt(2)").css('background','red') 多个过滤选择器不是同时执行的，而是依次
+        // $("li:lt(3):gt(0)").css('background','red')
+        // 选择内容为BBBBB的li
+        // $("li:contains('BBBBB')").css('background','red')
+        // 选择隐藏的li
+        // $("li:hidden").css('background','red')
+        // 选择有title属性的li
+        // $("li[title]").css('background','red')
+        // 选择所有属性title为hello的li元素
+        $("li[title=hello]").css('background','red')
+    </script>
+</body>
+</html>

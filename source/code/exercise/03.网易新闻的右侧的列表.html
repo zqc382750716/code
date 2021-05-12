@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网易新闻列表</title>
+    <link rel="stylesheet" href="../重置样式表/reset.css">
+    <style>
+        body{
+            background-color: #bfa;
+        }
+        a{
+            text-decoration: none;
+        }
+        .news-wrapper{
+            width: 300px;
+            height: 357px;
+            background-color: #fff;
+            margin: 50px auto;
+            border-top: 1px solid #ddd;
+        }
+        .news-title{
+            /* 为了边框和文字宽度一致，需要将h2转换为行内块元素 */
+            display: inline-block;
+            height: 30px;
+
+            border-top: 1px red solid;
+            /* 通过margin-top将h2上移，盖住上边框 */
+            margin-top: -1px;
+            padding-top: 10px;
+        }
+
+        .news-title a{
+            text-decoration: none;
+            color: #40406b;
+            font-weight: bold;
+        }
+        .news-img{
+            height: 150px;
+        }
+        .news-img .img-title{
+            color: #fff;
+            margin-top: -30px;
+            font-weight: bold;
+            padding-left: 30px;
+        }
+
+        .news-list{
+            margin-top: 20px;
+        }
+        .news-list li{
+            margin-bottom: 17px;
+        }
+        .news-list li a{
+            font-size: 14px;
+            color: #666;
+
+        }
+        .news-list li a:hover{
+            color: red;
+        }
+        .news-list li::before{
+            content: "■";
+            color: #666;
+            font-size: 12px;
+            margin-right: 4px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="news-wrapper">
+        <h2 class="news-title">
+            <a href="#">体育</a>
+        </h2>
+        <div class="news-img">
+        <a href="#">
+            <img src="./img/01/03/1.webp" alt="">
+
+            <h3 class="img-title">
+                费德勒首负吉米 扶额头不满发挥
+            </h3>
+        </a>
+        </div>
+
+        <ul class="news-list">
+            <li>
+                <a href="#">关于埃尔金-贝勒的一些轶事</a>
+            </li>
+            <li>
+                <a href="#">血染的大力神杯</a>
+            </li>
+            <li>
+                <a href="#">属于胖子的足球时代结束了</a>
+            </li>
+            <li>
+                <a href="#">香川真司：天才跌落凡间</a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

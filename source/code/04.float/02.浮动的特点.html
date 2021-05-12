@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box1{
+            width: 100px;
+            height: 100px;
+            background-color: #bfa;
+            }
+        /* 
+            浮动元素不会盖住文字，文字会自动环绕在浮动元素的周围
+                所以我们可以利用浮动来设置文字环绕图片的效果
+
+            元素设置浮动以后，将会从文档流中脱离，脱离后，元素的一些特点也会发生变化
+
+            脱离文档流的特点
+                块元素：
+                    1.块元素不再独占页面的一行
+                    2.脱离文档流以后，块元素的宽度和高度默认被元素撑开
+                行内元素：
+                    行内元素脱离文档流后会变成块元素
+         */
+    </style>
+</head>
+<body>
+    
+    <div class="box1"></div>
+    <p></p>
+</body>
+</html>

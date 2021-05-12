@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*
+            创建一个函数，用来计算三个数的和
+
+            可以使用return 来设置函数返回值
+            语法：
+                return 值
+
+            return后的值将会作为函数的执行结果返回，
+                可以定义一个变量来接收该结果
+
+            在函数中return后的语句都不会执行
+
+            如果return语句后不跟任何值就相当于返回一个undefined
+            如果函数中不写return，也会返回undefined
+
+            return后可以跟任意类型的值
+
+            实参可以是任意类型的值，也可以是一个对象
+                当我们的参数过多时，可以将参数封装到一个对象中，然后通过对象传递
+
+            实参可以是一个对象，也可以是一个函数
+        */
+       function sum(a,b,c) {
+           var d = a + b + c;
+
+           return d;
+       }
+       var result = sum(4,7,8);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

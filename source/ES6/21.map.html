@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 声明map
+        let m = new Map();
+
+        // 添加元素
+        m.set('name','aaa')
+        m.set('change',function () {
+            console.log('改变');
+        });
+        let key = {
+            username : 'eee'
+        };
+        m.set(key,['bbb','ccc','ddd'])
+        // 删除
+        m.delete('name')
+        // 获取
+        console.log(m.get('change'));
+        // 清空
+        m.clear()
+        // 遍历
+        for(let v of m){
+            console.log(v);
+        }
+    </script>
+</body>
+</html>

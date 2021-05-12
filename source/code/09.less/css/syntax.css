@@ -1,0 +1,16 @@
+/*
+    css中的注释，会被解析到css文件中
+*/
+body {
+  background-color: #bfa;
+}
+.box5 {
+  width: 100px;
+}
+.box6 {
+  width: 100px;
+}
+.box1 {
+  width: 200px;
+  height: 200px;
+}
