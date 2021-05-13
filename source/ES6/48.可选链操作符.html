@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 可选的链接运算符（?.）允许读取位于连接对象链深处的属性的值，而不必明确验证链中的每个引用是否有效
+        function main(config) {
+            // const dbHost = config && config.db && config.db.host;
+            const dbHost = config?.db?.host;
+
+            console.log(dbHost);
+        }
+        main({
+            db:{
+                host:'192.168.1.100',
+                username:"root"
+            },
+            cache:{
+                host:'192.168.1.200',
+                username:"admin"
+            }
+        })
+    </script>
+</body>
+</html>
